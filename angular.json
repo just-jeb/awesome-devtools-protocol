@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-chrome-extension": {
+    "awesome-devtools-protocol": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
             "customWebpackConfig": {
               "path": "./custom-webpack.config.ts"
             },
-            "outputPath": "dist/angular-chrome-extension",
+            "outputPath": "dist/awesome-devtools-protocol",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -32,7 +32,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/devtools.html"
             ],
             "styles": [
               "src/styles.scss"
@@ -84,10 +85,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-chrome-extension:build:production"
+              "browserTarget": "awesome-devtools-protocol:build:production"
             },
             "development": {
-              "browserTarget": "angular-chrome-extension:build:development"
+              "browserTarget": "awesome-devtools-protocol:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -95,7 +96,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-chrome-extension:build"
+            "browserTarget": "awesome-devtools-protocol:build"
           }
         },
         "test": {

@@ -2752,40 +2752,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"angular-chrome-extension@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "angular-chrome-extension@workspace:."
-  dependencies:
-    "@angular-builders/custom-webpack": ^14.0.0
-    "@angular-devkit/build-angular": ^14.0.2
-    "@angular/animations": ^14.0.3
-    "@angular/cli": ^14.0.2
-    "@angular/common": ^14.0.3
-    "@angular/compiler": ^14.0.3
-    "@angular/compiler-cli": ^14.0.3
-    "@angular/core": ^14.0.3
-    "@angular/forms": ^14.0.3
-    "@angular/platform-browser": ^14.0.3
-    "@angular/platform-browser-dynamic": ^14.0.3
-    "@angular/router": ^14.0.3
-    "@types/chrome": ^0.0.190
-    "@types/jasmine": ~3.8.0
-    "@types/node": ^16.11.41
-    jasmine-core: ~3.8.0
-    karma: ~6.3.0
-    karma-chrome-launcher: ~3.1.0
-    karma-coverage: ~2.0.3
-    karma-jasmine: ~4.0.0
-    karma-jasmine-html-reporter: ~1.7.0
-    ngx-color-picker: ^11.0.0
-    rxjs: ~6.6.0
-    tslib: ^2.2.0
-    typescript: ~4.6.4
-    webpack-ext-reloader: ^1.1.9
-    zone.js: ~0.11.4
-  languageName: unknown
-  linkType: soft
-
 "ansi-colors@npm:4.1.1":
   version: 4.1.1
   resolution: "ansi-colors@npm:4.1.1"
@@ -2965,6 +2931,39 @@ __metadata:
   checksum: 0e55d0d19806c672ec0c79cc23c27cf77e90edf2600670735266ba33ec5294458f404baaa2f7cd4cfe359cf7a97b3c86f01886bdbdc129a4f2f76ca5977a91af
   languageName: node
   linkType: hard
+
+"awesome-devtools-protocol@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "awesome-devtools-protocol@workspace:."
+  dependencies:
+    "@angular-builders/custom-webpack": ^14.0.0
+    "@angular-devkit/build-angular": ^14.0.2
+    "@angular/animations": ^14.0.3
+    "@angular/cli": ^14.0.2
+    "@angular/common": ^14.0.3
+    "@angular/compiler": ^14.0.3
+    "@angular/compiler-cli": ^14.0.3
+    "@angular/core": ^14.0.3
+    "@angular/forms": ^14.0.3
+    "@angular/platform-browser": ^14.0.3
+    "@angular/platform-browser-dynamic": ^14.0.3
+    "@angular/router": ^14.0.3
+    "@types/chrome": ^0.0.190
+    "@types/jasmine": ~3.8.0
+    "@types/node": ^16.11.41
+    jasmine-core: ~3.8.0
+    karma: ~6.3.0
+    karma-chrome-launcher: ~3.1.0
+    karma-coverage: ~2.0.3
+    karma-jasmine: ~4.0.0
+    karma-jasmine-html-reporter: ~1.7.0
+    rxjs: ~6.6.0
+    tslib: ^2.2.0
+    typescript: ~4.6.4
+    webpack-ext-reloader: ^1.1.9
+    zone.js: ~0.11.4
+  languageName: unknown
+  linkType: soft
 
 "aws-sign2@npm:~0.7.0":
   version: 0.7.0
@@ -6640,19 +6639,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ngx-color-picker@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "ngx-color-picker@npm:11.0.0"
-  dependencies:
-    tslib: ^2.0.0
-  peerDependencies:
-    "@angular/common": ">=9.0.0"
-    "@angular/core": ">=9.0.0"
-    "@angular/forms": ">=9.0.0"
-  checksum: 8fb6f10cb458925c94a2d237961fbf11aa3360589fc9addfb1bc9e2a5a54dc40738fadf2932030630a03d7910e35166f8db6cbf539a031d909b3b5b198cc56a8
-  languageName: node
-  linkType: hard
-
 "nice-napi@npm:^1.0.2":
   version: 1.0.2
   resolution: "nice-napi@npm:1.0.2"
@@ -9185,7 +9171,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.4.0, tslib@npm:^2.0.0, tslib@npm:^2.1.0, tslib@npm:^2.2.0, tslib@npm:^2.3.0":
+"tslib@npm:2.4.0, tslib@npm:^2.1.0, tslib@npm:^2.2.0, tslib@npm:^2.3.0":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113

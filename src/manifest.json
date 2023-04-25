@@ -1,19 +1,14 @@
 {
-  "name": "Great Extension",
-  "version": "1.0",
-  "description": "Build an Extension with Angular",
+  "name": "Awesome DevTools Protocol",
+  "version": "0.1.0",
+  "description": "Expose DevTools Protocol functionality in UI",
   "manifest_version": 3,
   "permissions": [
-      "activeTab",
-      "webNavigation",
-      "storage",
-      "scripting"
+      "debugger"
   ],
   "background": {
     "service_worker": "background.js",
     "type": "module"
   },
-  "action": {
-      "default_popup": "index.html"
-  }
+  "devtools_page": "devtools.html"
 }

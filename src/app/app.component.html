@@ -1,10 +1,2 @@
-<span [style.color]="color"
-  [cpToggle]="true"
-  [cpDialogDisplay]="'inline'"
-  [cpPositionRelativeToArrow]="true"
-  [(colorPicker)]="color"
-  [cpOKButtonText]="'Apply'"
-  [cpOKButton]="true"
-  (colorPickerChange)="updateColor($event)"
-  (colorPickerSelect)="colorize()">
-</span>
+<label>CPU Throttle</label>
+x <input type="number" min="1" max="100" [ngModel]="cpu" (ngModelChange)="updateCpu($event)"/>

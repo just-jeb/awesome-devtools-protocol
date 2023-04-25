@@ -8,7 +8,8 @@
   "files": [
     "src/main.ts",
     "src/polyfills.ts",
-    "src/background.ts"
+    "src/background.ts",
+    "src/devtools.ts"
   ],
   "include": [
     "src/**/*.d.ts"

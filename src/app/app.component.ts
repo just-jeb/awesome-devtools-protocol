@@ -1,33 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 
-const updateBackgroundColor = (color: string) => document.body.style.backgroundColor = color;
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  color = '#ffffff';
+  cpu = 1;
+  // Create a connection to the service worker
+  backgroundPageConnection = chrome.runtime.connect({
+    name: `${chrome.devtools.inspectedWindow.tabId}`
+  });
 
   ngOnInit(): void {
-    chrome.storage.sync.get('color', ({ color }) => {
-      this.color = color;
-    });
+    // chrome.storage.sync.get('cpuRate', ({ cpuRate }) => {
+    //   if (cpuRate) {
+    //     this.cpu = cpuRate;
+    //   }
+    // });
   }
 
-  public updateColor(color: string) {
-    chrome.storage.sync.set({ color });
-  }
+  public updateCpu(value: number) {
 
-  public colorize() {
-    chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-      chrome.scripting.executeScript({
-        target: { tabId: tabs[0].id! },
-        func: updateBackgroundColor,
-        args: [this.color]
-      });
-    });
+    console.log('Got CPU rate update: ', value)
+    this.backgroundPageConnection.postMessage({ cpu: value, tabId: chrome.devtools.inspectedWindow.tabId });
   }
 }
