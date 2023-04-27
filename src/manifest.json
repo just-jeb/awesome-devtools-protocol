@@ -1,6 +1,6 @@
 {
   "name": "Awesome DevTools Protocol",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Expose DevTools Protocol functionality in UI",
   "manifest_version": 3,
   "icons": {
