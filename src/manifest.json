@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "Expose DevTools Protocol functionality in UI",
   "manifest_version": 3,
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
   "permissions": [
       "debugger"
   ],
